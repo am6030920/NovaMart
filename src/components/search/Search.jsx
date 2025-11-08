@@ -1,5 +1,6 @@
 import React from "react";
 import "./Search.css";
+
 import Button from "@mui/material/Button";
 import { CiSearch } from "react-icons/ci";
 
@@ -14,11 +15,11 @@ const Search = () => {
       />
 
       <Button
-        className="!absolute top-[5px] right-[5px] z-50 !w-[35px] !min-w-[35px] h-[35px] rounded-full !bg-blue-600 hover:!bg-blue-700 flex items-center justify-center"
+        className="!absolute top-[6px] right-[5px] z-50 !w-[37px] !min-w-[37px] h-[37px] !rounded-full !bg-blue-600 hover:!bg-blue-700 flex items-center justify-center !text-black" 
         style={{marginRight:"-10vh"}}
       >
-        <CiSearch className="text-white text-[22px]" />
-        {/* 46.09 */}
+        <CiSearch className="text-[#000] text-[22px]" />
+       
       </Button>
     </div>
   );
