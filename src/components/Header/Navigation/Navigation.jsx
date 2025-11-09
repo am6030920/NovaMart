@@ -1,19 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Nigation.css";
 import Button from "@mui/material/Button";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { GoRocket } from "react-icons/go";
+import Categoy from "./Categoy";
 
 const Navigation = () => {
+
+  const [isOpenCatPanel , setisOpenCatPanel] = useState(false);
+
+  const opencategoy=()=>{
+      setisOpenCatPanel(true);
+  }
+
   return (
+ <>
     <nav className="py-4" style={{ marginTop: "5px" ,}}>
       <div className="container flex items-center justify-end gap-5">
         <div className="col1 w-[20%]">
           <Button
             className="!text-black !normal-case w-full"
             style={{ color: "black", gap: "4px", fontWeight: "25px" }}
+            onClick={opencategoy}
           >
             <AiOutlineMenu className="text-[18px]" />
             Shop by Categories
@@ -109,6 +119,11 @@ const Navigation = () => {
         </div>
       </div>
     </nav>
+
+{/* 
+    //category panel */}
+    <Categoy isOpenCatPanel={isOpenCatPanel} setisOpenCatPanel={setisOpenCatPanel}/>
+ </>
   );
 };
 
