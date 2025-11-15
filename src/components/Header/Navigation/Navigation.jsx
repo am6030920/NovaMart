@@ -32,10 +32,12 @@ const Navigation = () => {
               className="ml-auto"
             />
           </Button>
+          
         </div>
         <div className="col2 w-[60%]">
+          
           <ul
-            className="flex items-center gap-2 bg-gray-100 "
+            className="flex items-center gap-2 bg-gray-100 nav "
             style={{ gap: "1px" }}
           >
             <li className="list-none">
@@ -48,13 +50,73 @@ const Navigation = () => {
                 </Button>
               </Link>
             </li>
-            <li className="list-none">
+            <li className="list-none relative">
               <Link to="/" className="text-[16px] Link no-underline transition ">
               <Button style={{color:"black"}}>
 
                 Fahion
                 </Button>
               </Link>
+
+                  <div className="submenu absolute top-[120%] left-[0%] min-w-300px bg-white shadow-md opacity-0 transition">
+                    <ul>
+                      <li className="list-none w-full">
+                        <Link to="/" className='w-full'>
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' >
+                                Men
+                        </Button>
+                        </Link>
+                      </li>
+                      <li className="list-none w-full">
+                                                <Link to="/" className='w-full'>
+
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' style={{fontWeight:"400px"}}>
+                                Women
+                        </Button>
+                                                </Link>
+
+                      </li>
+                      <li className="list-none">
+                                                <Link to="/" className='w-full'>
+
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' style={{fontWeight:"400px"}}>
+                                kids
+                        </Button>
+                        </Link>
+                      </li>
+                      <li className="list-none">
+                                                <Link to="/" className='w-full'>
+
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' style={{fontWeight:"400px"}}>
+                                Girls
+                        </Button>
+                                                </Link>
+
+                      </li>
+                      <li className="list-none w-full">
+                                                <Link to="/" className='w-full'>
+
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' style={{fontWeight:"400px"}}>
+                                Men
+                        </Button>
+                                                </Link>
+
+                      </li>
+                      <li className="list-none w-full">
+                                                <Link to="/" className='w-full'>
+
+                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' style={{fontWeight:"400px"}}>
+                                  Boys
+                        </Button>
+                                                </Link>
+
+                      </li>
+                    </ul>
+                  </div>
+
+
+
+
             </li>
             <li className="list-none">
               <Link to="/" className="text-[16px] Link no-underline transition">
@@ -112,7 +174,7 @@ const Navigation = () => {
         </div>
 
         <div className="col3 w-[20%]">
-          <p style={{ fontWeight: "350", fontSize: "16px" ,display:"flex",justifyItems:"center",gap:"5px",marginLeft:"52px",color:"#0f0f0f"}} className="mb-0 mt-0">
+          <p style={{ fontWeight: "400", fontSize: "17px" ,display:"flex",justifyItems:"center",gap:"5px",marginLeft:"62px",color:"#0f0f0f"}} className="mb-0 mt-0">
             <GoRocket className="text-[19px]"/>
             Free International Delivery
           </p>
