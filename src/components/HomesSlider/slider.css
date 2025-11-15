@@ -42,7 +42,7 @@
 /* Navigation arrows */
 .swiper-button-next,
 .swiper-button-prev {
-  color:#ff5252 !important;
+  color:#fff !important;
   width: 45px;
   height: 45px;
   transition: all 0.3s ease;
