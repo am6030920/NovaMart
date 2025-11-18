@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Product3 from "../../assets/Product3.png";
+import Duplicate3 from "../../assets/Duplicate3.png";
+
 import { Link } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
@@ -11,6 +13,7 @@ import "./Product.css";
 const ProductItems2 = () => {
    const [wishlist, setWishlist] = useState(false);
     const [hover, setHover] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
   
     return (
     <>
@@ -171,31 +174,31 @@ const ProductItems2 = () => {
             >
           
             {/* Product Image */}
-          
-            <div style={{
-              width: "100%",
-              height: "200px",
-              overflow: "hidden",
-              borderRadius: "10px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}>
-            
-              <img 
-                src={Product3} 
-                alt="product"
+           <div
                 style={{
-                  width: "70%",
-                  height: "100%",
-                  objectFit: "cover",
-                  transition: "0.4s",
+                  width: "100%",
+                  height: "200px",
+                  overflow: "hidden",
+                  borderRadius: "10px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
-                className="productImg"
-                onMouseOver={(e)=> e.currentTarget.style.transform = "scale(1.1)"}
-                onMouseOut={(e)=> e.currentTarget.style.transform = "scale(1)"}
-              />
-            </div>
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                <img
+                  src={isHovered ? Duplicate3 : Product3}
+                  alt="product"
+                  style={{
+                    width: "70%",
+                    height: "100%",
+                    objectFit: "cover",
+                    transition: "0.4s",
+                    transform: isHovered ? "scale(1.1)" : "scale(1)",
+                  }}
+                />
+              </div>
             
           
             {/* Product Details */}

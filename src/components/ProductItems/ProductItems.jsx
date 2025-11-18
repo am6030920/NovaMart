@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Product1 from "../../assets/Product1.png";
+import Duplicate1 from "../../assets/Duplicate1.png";
+
 import { Link } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
@@ -12,6 +14,7 @@ const ProductItems = () => {
 
   const [wishlist, setWishlist] = useState(false);
   const [hover, setHover] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <>
@@ -48,7 +51,7 @@ const ProductItems = () => {
     zIndex: 1000,
   }}
 >
-  {/* ❤️ Wishlist Button */}
+  {/* Wishlist Button */}
   {hover && (
     <button
       onClick={() => setWishlist(!wishlist)}
@@ -92,7 +95,7 @@ const ProductItems = () => {
     </button>
   )}
 
-  {/* 🔁 Compare Button */}
+  {/*  Compare Button */}
   {hover && (
     <button
       style={{
@@ -127,7 +130,7 @@ const ProductItems = () => {
     </button>
   )}
 
-  {/* 🔍 Zoom Button */}
+  {/*  Zoom Button */}
   {hover && (
     <button
       style={{
@@ -172,28 +175,37 @@ const ProductItems = () => {
 
         <Link to="/" style={{ textDecoration: "none", color: "#777" }}>
 
-          {/* Product Image */}
-          <div style={{
-            width: "100%",
-            height: "200px",
-            overflow: "hidden",
-            borderRadius: "10px",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}>
-            <img
-              src={Product1}
-              alt="product"
-              style={{
-                width: "70%",
-                height: "100%",
-                objectFit: "cover",
-                transition: "0.4s",
-                transform: hover ? "scale(1.1)" : "scale(1)",
-              }}
-            />
-          </div>
+      <div
+      style={{
+        width: "100%",
+        height: "200px",
+        overflow: "hidden",
+        borderRadius: "10px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <img
+        src={isHovered ? Duplicate1 : Product1}
+        alt="product"
+        style={{
+          width: "70%",
+          height: "100%",
+          objectFit: "cover",
+          transition: "0.4s",
+          transform: isHovered ? "scale(1.1)" : "scale(1)",
+        }}
+      />
+    </div>
+
+
+
+
+
+
 
           {/* Product Name */}
           <h4 style={{
