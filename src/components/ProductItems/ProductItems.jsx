@@ -3,6 +3,10 @@ import Product1 from "../../assets/Product1.png";
 import { Link } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
+import { IoIosGitCompare } from "react-icons/io";
+import { MdZoomOutMap } from "react-icons/md";
+import "./Product.css";
+
 
 const ProductItems = () => {
 
@@ -32,49 +36,139 @@ const ProductItems = () => {
         onMouseLeave={() => setHover(false)}
       >
 
-        {/* ❤️ Wishlist Button - appears on hover */}
-        {hover && (
-          <button
-            onClick={() => setWishlist(!wishlist)}
-            style={{
-              position: "absolute",
-              top: "10px",
-              right: "10px",
-              width: "40px",
-              height: "40px",
-              borderRadius: "50%",
-              backgroundColor: wishlist ? "#FFE7E7" : "white",
-              border: "1px solid #dcdcdc",
-              cursor: "pointer",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              fontSize: "20px",
-              transition: "all 0.3s ease",
-              color: wishlist ? "red" : "#555",
-              zIndex: 999,
-            }}
-            onMouseEnter={(e) => {
-              if (!wishlist) {
-                e.target.style.backgroundColor = "#B3E5FC";
-                e.target.style.color = "#1976D2";
-              }
-              e.target.style.transform = "scale(1.12)";
-            }}
-            onMouseLeave={(e) => {
-              if (!wishlist) {
-                e.target.style.backgroundColor = "white";
-                e.target.style.color = "#555";
-              } else {
-                e.target.style.backgroundColor = "#FFE7E7";
-                e.target.style.color = "red";
-              }
-              e.target.style.transform = "scale(1)";
-            }}
-          >
-            {wishlist ? <FaHeart /> : <CiHeart />}
-          </button>
-        )}
+       {/* Button Container */}
+<div
+  style={{
+    position: "absolute",
+    top: "10px",
+    right: "10px",
+    display: "flex",
+    flexDirection: "column",
+    gap: "12px",
+    zIndex: 1000,
+  }}
+>
+  {/* ❤️ Wishlist Button */}
+  {hover && (
+    <button
+      onClick={() => setWishlist(!wishlist)}
+      style={{
+        width: "42px",
+        height: "42px",
+        borderRadius: "50%",
+        border: "1px solid #e6e6e6",
+        backgroundColor: wishlist ? "#FFE5E5" : "white",
+        color: wishlist ? "red" : "#444",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        fontSize: "20px",
+        cursor: "pointer",
+        transition: "all .35s ease",
+        boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
+        opacity: hover ? 1 : 0,
+        transform: "translateX(0)",
+        animation: "fadeButtons .4s ease forwards",
+      }}
+      onMouseEnter={(e) => {
+        if (!wishlist) {
+          e.target.style.backgroundColor = "#B3E5FC";
+          e.target.style.color = "#1976D2";
+        }
+        e.target.style.transform = "scale(1.12)";
+      }}
+      onMouseLeave={(e) => {
+        if (!wishlist) {
+          e.target.style.backgroundColor = "white";
+          e.target.style.color = "#444";
+        } else {
+          e.target.style.backgroundColor = "#FFE5E5";
+          e.target.style.color = "red";
+        }
+        e.target.style.transform = "scale(1)";
+      }}
+    >
+      {wishlist ? <FaHeart /> : <CiHeart />}
+    </button>
+  )}
+
+  {/* 🔁 Compare Button */}
+  {hover && (
+    <button
+      style={{
+        width: "42px",
+        height: "42px",
+        borderRadius: "50%",
+        border: "1px solid #e6e6e6",
+        backgroundColor: "white",
+        color: "#444",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        fontSize: "20px",
+        cursor: "pointer",
+        transition: "all .35s ease",
+        boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
+        opacity: hover ? 1 : 0,
+        animation: "fadeButtons .55s ease forwards",
+      }}
+      onMouseEnter={(e) => {
+        e.target.style.backgroundColor = "#B3E5FC";
+        e.target.style.color = "#1976D2";
+        e.target.style.transform = "scale(1.12)";
+      }}
+      onMouseLeave={(e) => {
+        e.target.style.backgroundColor = "white";
+        e.target.style.color = "#444";
+        e.target.style.transform = "scale(1)";
+      }}
+    >
+      <IoIosGitCompare />
+    </button>
+  )}
+
+  {/* 🔍 Zoom Button */}
+  {hover && (
+    <button
+      style={{
+        width: "42px",
+        height: "42px",
+        borderRadius: "50%",
+        border: "1px solid #e6e6e6",
+        backgroundColor: "white",
+        color: "#444",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        fontSize: "20px",
+        cursor: "pointer",
+        transition: "all .35s ease",
+        boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
+        opacity: hover ? 1 : 0,
+        animation: "fadeButtons .7s ease forwards",
+      }}
+      onMouseEnter={(e) => {
+        e.target.style.backgroundColor = "#B3E5FC";
+        e.target.style.color = "#1976D2";
+        e.target.style.transform = "scale(1.12)";
+      }}
+      onMouseLeave={(e) => {
+        e.target.style.backgroundColor = "white";
+        e.target.style.color = "#444";
+        e.target.style.transform = "scale(1)";
+      }}
+    >
+      <MdZoomOutMap />
+    </button>
+  )}
+</div>
+
+
+
+
+
+
+
 
         <Link to="/" style={{ textDecoration: "none", color: "#777" }}>
 
