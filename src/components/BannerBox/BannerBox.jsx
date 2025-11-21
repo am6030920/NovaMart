@@ -34,8 +34,8 @@
             objectFit: "cover",
             display: "block",
             transition: "0.35s ease",
-            borderRadius: "12px", // must match wrapper
-            clipPath: "inset(0 round 12px)", 
+            borderRadius: "12px",
+            clipPath: "inset(0 round 12px)",
           }}
         />
       </Link>
