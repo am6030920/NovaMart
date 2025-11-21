@@ -11,6 +11,14 @@ import Box from "@mui/material/Box";
 import Poducts from "../../components/ProductsSlider/Poducts";
 import AdsSectionHome from "../../components/AdsSectionHome/AdsSectionHome";
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import BlogItems from "../../components/BlogItems/BlogItems";
+
 const Home = () => {
   // FIX: Tabs States
   const [value, setValue] = useState(0);
@@ -170,6 +178,29 @@ const Home = () => {
 
             <AdsBanner items={4} />
           </div>
+        </section>
+
+
+
+        {/* from vlog section */}
+        <section className="blogsection" style={{padding:"5px",background:"#fff",paddingBottom:"10px",paddingLeft:"75px"}}>
+                  <div style={{padding:"5"}}> 
+                    <h2 style={{fontSize:"3vh",paddingBottom:"0px",fontWeight:"400",}}>From The Blog</h2>
+                  <Swiper
+        cssMode={true}
+        navigation={true}
+        pagination={true}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+        className="blogSlder"
+      >
+        <SwiperSlide> 
+          <BlogItems />
+        </SwiperSlide>
+        
+      </Swiper>
+                  </div>
         </section>
       </div>
     </div>
