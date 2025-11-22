@@ -10,14 +10,13 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Poducts from "../../components/ProductsSlider/Poducts";
 import AdsSectionHome from "../../components/AdsSectionHome/AdsSectionHome";
-
-
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import BlogItems from "../../components/BlogItems/BlogItems";
+import BlogItems2 from "../../components/BlogItems/BlogItems2";
+import BlogItems4 from "../../components/BlogItems/BlogItems4";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   // FIX: Tabs States
@@ -186,22 +185,31 @@ const Home = () => {
         <section className="blogsection" style={{padding:"5px",background:"#fff",paddingBottom:"10px",paddingLeft:"75px"}}>
                   <div style={{padding:"5"}}> 
                     <h2 style={{fontSize:"3vh",paddingBottom:"0px",fontWeight:"400",}}>From The Blog</h2>
-                  <Swiper
-        cssMode={true}
-        navigation={true}
-        pagination={true}
-        mousewheel={true}
-        keyboard={true}
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="blogSlder"
-      >
-        <SwiperSlide> 
+                     <div
+        style={{
+        margin: "auto",
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+        gap: "40px",  
+      }}
+    >
           <BlogItems />
-        </SwiperSlide>
-        
-      </Swiper>
+          <BlogItems2 />
+          <BlogItems />
+          <BlogItems4 />
+       </div>
                   </div>
         </section>
+
+
+
+{/* footer section */}
+      <section style={{background:"#fff"}}>
+        <div>
+        <Footer/>
+        </div>
+      </section>
+
       </div>
     </div>
   );
