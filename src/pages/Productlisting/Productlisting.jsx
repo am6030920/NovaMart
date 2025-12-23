@@ -14,7 +14,8 @@ function handleClick(event) {
 const Productlisting = () => {
   return (
     <section style={{ padding: "8px" }}>
-        <div role="presentation" onClick={handleClick}>
+        <div className="main">
+          <div role="presentation" onClick={handleClick}>
       <Breadcrumbs aria-label="breadcrumb">
         <Link
           underline="hover"
@@ -23,7 +24,7 @@ const Productlisting = () => {
           href="/"
         >
           <HomeIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          MUI
+          Home
         </Link>
         <Link
           underline="hover"
@@ -32,19 +33,16 @@ const Productlisting = () => {
           href="/material-ui/getting-started/installation/"
         >
           <WhatshotIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Core
+          Fashion
         </Link>
-        <Typography
-          sx={{ color: 'text.primary', display: 'flex', alignItems: 'center' }}
-        >
-          <GrainIcon sx={{ mr: 0.5 }} fontSize="inherit" />
-          Breadcrumb
-        </Typography>
+      
       </Breadcrumbs>
     </div>
+        </div>
       <div className="my-container" style={{ display: "flex", gap: "3px" }}>
         <div className="SidebarWrraper" style={{width:"20%",height:"full",padding:"5px"}}>
           <Sidebar/>
+          
         </div>
       </div>
     </section>
