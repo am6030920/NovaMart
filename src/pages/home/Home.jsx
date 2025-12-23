@@ -16,7 +16,6 @@ import 'swiper/css/pagination';
 import BlogItems from "../../components/BlogItems/BlogItems";
 import BlogItems2 from "../../components/BlogItems/BlogItems2";
 import BlogItems4 from "../../components/BlogItems/BlogItems4";
-import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   // FIX: Tabs States
@@ -47,7 +46,7 @@ const Home = () => {
           </style>
 
           <div
-            className="container"
+            className="my-container"
             style={{ paddingTop: "25px", paddingBottom: "25px" }}
           >
             {/* Free Shipping Section */}
@@ -206,7 +205,6 @@ const Home = () => {
 {/* footer section */}
       <section style={{background:"#fff"}}>
         <div>
-        <Footer/>
         </div>
       </section>
 

@@ -28,7 +28,7 @@ const Header = () => {
     <header>
 <div className="top-strip py-2 border-b" style={{ borderColor: 'rgba(0,0,0,0.2)' }}>
 
-        <div className="container px-4 mx-auto">
+        <div className="my-container px-4 mx-auto">
           <div className="flex items-center justify-between">
             <p className="text-[12px] font-normal text-gray-700">
               Get Up to 50% off new season styles, limited time offer
@@ -59,7 +59,7 @@ const Header = () => {
       </div>
 
       <div className="header py-5 border-b" style={{ borderColor: 'rgba(0,0,0,0.2)' }}>
-        <div className="container flex items-center justify-between">
+        <div className="my-container flex items-center justify-between">
           <div className="col1 w-[25%] h-[80%]">
             <Link to="/">
               <img src={logo} className="w-full h-auto" alt="logo" />

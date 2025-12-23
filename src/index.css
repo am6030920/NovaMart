@@ -8,9 +8,10 @@
   box-sizing: border-box;
 } */
 
-.container{
+.my-container{
   width: 90%;
   margin: auto;
+
 }
 body{
   font-family: "Roboto Condensed", sans-serif;

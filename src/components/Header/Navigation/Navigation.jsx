@@ -18,7 +18,7 @@ const Navigation = () => {
   return (
  <>
     <nav className="py-4" style={{ marginTop: "5px" ,}}>
-      <div className="container flex items-center justify-end gap-5">
+      <div className="my-container flex items-center justify-end gap-5">
         <div className="col1 w-[20%]">
           <Button
             className="!text-black !normal-case w-full"

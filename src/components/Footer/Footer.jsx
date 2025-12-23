@@ -39,7 +39,7 @@ const [email, setEmail] = useState("");
   return (
     <footer>
       <div
-        className="container"
+        className="my-container"
         style={{ paddingTop: "14vh" }}
       >
      <div style={{ display: "flex", justifyContent: "center", gap: "14vh", paddingBottom:"10vh", marginBottom:"0vh" }}>
