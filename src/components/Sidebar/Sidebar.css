@@ -1,0 +1,54 @@
+.Sidebar {
+  width: 260px;
+}
+
+.Box {
+  padding: 10px;
+  background: #fff;
+}
+
+/* header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 8px 6px;
+  margin-left: 20px;
+
+}
+
+.sidebar-header h3 {
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: -8vh;
+}
+
+/* arrow */
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+/* collapsible area */
+.ProductData {
+  max-height: 220px;   /* height control */
+  overflow-y: auto;
+  padding-right: 5px;
+  margin-top: 5px;
+}
+
+/* scrollbar */
+.ProductData::-webkit-scrollbar {
+  width: 4px;
+}
+.ProductData::-webkit-scrollbar-thumb {
+  background: #cfcfcf;
+  border-radius: 10px;
+}
+.sidebar-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  margin-left: 12px;   /* 👉 এটাতেই লেখাটা right এ যাবে */
+}
+
