@@ -1,54 +1,60 @@
-.Sidebar {
-  width: 260px;
+.sidebar {
+  width: 100%;
 }
 
-.Box {
-  padding: 10px;
+.sidebar-box {
   background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
-/* header */
+/* Header */
 .sidebar-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
-  padding: 8px 6px;
-  margin-left: 20px;
-
-}
-
-.sidebar-header h3 {
-  font-weight: 400;
   font-size: 16px;
-  margin-right: -8vh;
+  font-weight: 600;
 }
 
-/* arrow */
-.arrow {
-  transition: transform 0.3s ease;
+/* Section */
+.sidebar-section {
+  margin-top: 18px;
 }
 
-/* collapsible area */
-.ProductData {
-  max-height: 220px;   /* height control */
-  overflow-y: auto;
-  padding-right: 5px;
-  margin-top: 5px;
+.sidebar-section h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-/* scrollbar */
-.ProductData::-webkit-scrollbar {
-  width: 4px;
-}
-.ProductData::-webkit-scrollbar-thumb {
-  background: #cfcfcf;
-  border-radius: 10px;
-}
-.sidebar-title {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1;
-  margin-left: 12px;   /* 👉 এটাতেই লেখাটা right এ যাবে */
+/* Range slider */
+.range-wrapper {
+  width: 100%;
 }
 
+.range-wrapper .range-slider {
+  height: 6px;
+}
+
+.range-wrapper .range-slider__thumb {
+  width: 14px;
+  height: 14px;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Rating */
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
