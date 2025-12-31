@@ -4,6 +4,7 @@ import Link from "@mui/material/Link";
 import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { Link as RouterLink } from "react-router-dom";
+import ProductZoom from "../../components/ProductZoom/ProductZoom";
 
 const ProductDetails = () => {
   return (
@@ -34,6 +35,15 @@ const ProductDetails = () => {
 
       </Breadcrumbs>
 
+
+
+
+
+        <div className="container flex gap-4">
+          <div className="ProductZoomContainer">
+            <ProductZoom/>
+          </div>
+        </div>
     </section>
   );
 };
