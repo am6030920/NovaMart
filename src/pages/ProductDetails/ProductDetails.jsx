@@ -40,7 +40,7 @@ const ProductDetails = () => {
 
 
         <div className="container flex gap-4">
-          <div className="ProductZoomContainer">
+          <div className="ProductZoomContainer " style={{width:"30%"}}>
             <ProductZoom/>
           </div>
         </div>

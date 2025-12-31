@@ -1,0 +1,49 @@
+/* outer card */
+.product-image-card {
+  width: 440px;
+  padding: 14px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* image area */
+.zoom-wrapper {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f6f6f6;
+  cursor: crosshair;
+}
+
+.zoom-wrapper img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+}
+
+/* Amazon-style square magnifier */
+.zoom-lens {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  background-color: #fff;
+}
+
+/* small helper text */
+.zoom-hint {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.3px;
+}
