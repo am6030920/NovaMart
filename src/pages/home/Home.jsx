@@ -19,7 +19,6 @@ import BlogItems4 from "../../components/BlogItems/BlogItems4";
 
 const Home = () => {
   const [value, setValue] = useState(0);
-  const [newvalue, setnewvalue] = useState(1);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
