@@ -18,11 +18,15 @@ import BlogItems2 from "../../components/BlogItems/BlogItems2";
 import BlogItems4 from "../../components/BlogItems/BlogItems4";
 
 const Home = () => {
-  // FIX: Tabs States
   const [value, setValue] = useState(0);
+  const [newvalue, setnewvalue] = useState(1);
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+
+
 
   return (
     <div>
