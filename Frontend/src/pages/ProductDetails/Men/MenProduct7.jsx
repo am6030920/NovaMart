@@ -5,7 +5,7 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 
-const MenProduct5 = () => {
+const MenProduct7 = () =>{
      const [wishlist, setWishlist] = useState(false);
       const [hover, setHover] = useState(false);
       const [isHovered, setIsHovered] = useState(false);
@@ -173,7 +173,7 @@ const MenProduct5 = () => {
                 onMouseLeave={() => setIsHovered(false)}
               >
                 <img
-                  src={isHovered ? "https://m.media-amazon.com/images/I/71xomI4L7fL._SY741_.jpg" : "https://m.media-amazon.com/images/I/71gxzNP0V3L._SY741_.jpg"}
+                  src={isHovered ? "https://m.media-amazon.com/images/I/61vr-PbWkfL._SX679_.jpg" : "https://m.media-amazon.com/images/I/61feVN3CCuL._SX679_.jpg"}
                   alt="product"
                   style={{
                     width: "70%",
@@ -194,7 +194,7 @@ const MenProduct5 = () => {
                   marginTop: "10px",
                 }}
               >
-            Lymio Men Shirt
+            Casual Wear 
               </h4>
     
               {/* Description */}
@@ -207,7 +207,7 @@ const MenProduct5 = () => {
                   margin: "0",
                 }}
               >
-              Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Packs Also Available) (Rib)
+              Campus Sutra Men's Buffalo Check Button Up Regular Fit Shirt for Casual Wear | 
               </p>
     
               {/* Price Section */}
@@ -222,7 +222,7 @@ const MenProduct5 = () => {
                 <span
                   style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
                 >
-                  ₹429
+                  ₹949
                 </span>
                 <span
                   style={{
@@ -231,12 +231,12 @@ const MenProduct5 = () => {
                     fontSize: "13px",
                   }}
                 >
-                  ₹3999
+                  ₹1899
                 </span>
                 <span
                   style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
                 >
-                  89% OFF
+                  50% OFF
                 </span>
               </div>
     
@@ -251,7 +251,7 @@ const MenProduct5 = () => {
                 }}
               >
                 ⭐⭐⭐⭐⭐
-                <span style={{ fontSize: "13px", color: "#555" }}>(459)</span>
+                <span style={{ fontSize: "13px", color: "#555" }}>(173)</span>
               </div>
     
               {/* Delivery */}
@@ -270,4 +270,5 @@ const MenProduct5 = () => {
         </>
   )
 }
-export default MenProduct5
+
+export default MenProduct7

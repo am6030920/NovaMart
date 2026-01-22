@@ -21,6 +21,11 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import MenProduct1 from "./Men/MenProduct1";
 import MenProduct2 from "./Men/MenProduct2";
+import MenProduct3 from "./Men/MenProduct3";
+import MenProduct4 from "./Men/MenProduct4";
+import MenProduct5 from "./Men/MenProduct5";
+import MenProduct6 from "./Men/MenProduct6";
+import MenProduct7 from "./Men/MenProduct7";
 
 
 const ProductDetails = (props) => {
@@ -478,11 +483,27 @@ const ProductDetails = (props) => {
         </SwiperSlide>
 
 
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>
+          <MenProduct3/>
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <MenProduct4/>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <MenProduct5/>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <MenProduct6/>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <MenProduct7/>
+          </SwiperSlide>
+
+
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>

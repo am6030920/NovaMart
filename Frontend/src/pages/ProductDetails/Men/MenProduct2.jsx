@@ -174,7 +174,7 @@ const MenProduct2 = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <img
-              src={isHovered ? "https://m.media-amazon.com/images/I/51sSJUx8mwL._SY879_.jpg" : "https://m.media-amazon.com/images/I/61SOAIN5udL._SY741_.jpg"}
+              src={isHovered ? "https://m.media-amazon.com/images/I/81v5iVPdONL._SY741_.jpg" : "https://m.media-amazon.com/images/I/81epRpV+jxL._SY741_.jpg"}
               alt="product"
               style={{
                 width: "70%",
@@ -195,7 +195,7 @@ const MenProduct2 = () => {
               marginTop: "10px",
             }}
           >
-           VX Men Sweatshirts
+          Highlander Men HLSH015266
           </h4>
 
           {/* Description */}
@@ -203,12 +203,12 @@ const MenProduct2 = () => {
             style={{
               fontSize: "13px",
               color: "#777",
-              height: "34px",
+              height: "38px",
               overflow: "hidden",
               margin: "0",
             }}
           >
-            Actual Products color may vary with product due to monitor|Available in Plus Size
+            55% COTTON 45% POLY
           </p>
 
           {/* Price Section */}
@@ -223,7 +223,7 @@ const MenProduct2 = () => {
             <span
               style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
             >
-              ₹459
+              ₹599
             </span>
             <span
               style={{
@@ -232,12 +232,12 @@ const MenProduct2 = () => {
                 fontSize: "13px",
               }}
             >
-              ₹2999
+              ₹1949
             </span>
             <span
               style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
             >
-              85% OFF
+              69% OFF
             </span>
           </div>
 
@@ -252,7 +252,7 @@ const MenProduct2 = () => {
             }}
           >
             ⭐⭐⭐⭐⭐
-            <span style={{ fontSize: "13px", color: "#555" }}>(202)</span>
+            <span style={{ fontSize: "13px", color: "#555" }}>(3021)</span>
           </div>
 
           {/* Delivery */}
